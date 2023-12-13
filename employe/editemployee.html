@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details Employee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <section class="conTainer">
+        <div class="main-section">
+            <!-- Side bar section -->
+            <div class="main-side-section">
+                <div class="nav-head">
+                    <div class="main-section-head">Employee</div>
+                    <div class="main-side-head">Management</div>
+                </div>
+            </div>
+
+            <!-- nav links -->
+
+            <div class="nav-content">
+                <ul class="nav-head-content">
+                    <li><a href=""><i class="fa-solid fa-house"></i> <span class="navrbars-text">Dashboard</span></a>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-chart-simple"></i><span
+                                class="navrbars-text">Employees</span></a></li>
+                    <li><a href=""><i class="fa-solid fa-user"></i><span class="navrbars-text">My Profile</span></a>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-lock"></i><span class="navrbars-text">Logout</span></a></li>
+
+                </ul>
+            </div>
+            <!-- powered bye area -->
+            <div class="copyright">
+                <div class="copyright-content">Powered by</div>
+                <img src="img/logo.png" alt="stackup learining">
+            </div>
+        </div>
+
+
+        <!-- main content  -->
+        <div class="main-content">
+            <!-- main header text -->
+            <div class="banner-header">
+                <div class="banner-text">
+                    <div class="head-text">Dashboard / Employees / Employee Details</div>
+                    <div class="main-head">Employee Details</div>
+                </div>
+
+                <!-- seacrch and profile -->
+                <div class="profile_search">
+                    <div class="search_input">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="search" placeholder="search">
+                    </div>
+                    <i class="fa-regular fa-bell bell"></i>
+                    <img src="img/Avatar Style 6.png">
+                </div>
+            </div>
+
+            
+            
+
+
+            <div class="row edit-form" id="editEmployeeForm">
+
+                <div class="col-lg-6 bg-colour edit-block col-md-12 " id="block">
+                        <div class="emp-details">
+                        <img class="img-bg" src="img/Background Image.png">
+                       
+                        <img class="bg-image" id="view-img" src="img/Elipse 5.png">
+                        <div class="img-head">
+                        <div class="form-name"><span id="view-salutation">Mr.</span> <span id="view-firstname"> Michael</span> <span id="view-lastname">Johnson</span></div>
+                        <div class="form-email" id="view-email">michaelj.@gmail.com</div>
+                        </div>
+                        <!-- <button data-close-button class="close-button">&times;</button> -->
+                       </div>
+                         <!-- row1 -->
+                         <div class="form-table mt-4">
+                         <div class="form-text">
+                             <div class=" form-email">Gender</div>
+                             <div class="form-name form-content" id="view-gender">Female</div>
+
+                         </div>
+
+                         <div class="form-text">
+                            <div class=" form-email">Age</div>
+                            <div class="form-name form-content" id="view-age">37</div>
+
+                        </div>
+
+                        <div class="form-text">
+                            <div class=" form-email">Date of Birth</div>
+                            <div class="form-name form-content" id="view-dob">12 december 1980</div>
+
+                        </div>
+                        </div>
+                      
+                          <!-- row2 -->
+                        <div class="form-table mt-3">
+                        <div class="form-text form-box">
+                            <div class=" form-email">Mobile Number</div>
+                            <div class="form-name form-content" id="view-phone"></div>
+
+                        </div>
+
+                        <div class="form-text form-box">
+                            <div class=" form-email">Qualification</div>
+                            <div class="form-name form-content" id="view-qualification">BCA</div>
+
+                        </div>
+
+                        </div>
+
+                         <!-- row2 -->
+                         <div class="form-table mt-3">
+                            <div class="form-text form-box">
+                                <div class=" form-email">Address</div>
+                                <div class="form-name form-content" id="view-address">North No-12 Garden villa
+                                    Cochin
+                                </div>
+    
+                            </div>
+    
+                            <div class="form-text form-box">
+                                <div class=" form-email">Username</div>
+                                <div class="form-name form-content" id="view-username">michaeljohn</div>
+    
+                            </div>
+    
+                            </div>
+
+                        <div class=" d-flex justify-content-end buttons edit-block bg-colour w-100">
+                            <button type="button" class="btn dele-btns align">Delete</button>
+                            <button type="button" class="btn btn-primary">Edit Details</button>
+                        </div>
+                    
+                </div>
+            </div>
+            
+
+
+            <div id="overlay"></div>
+
+
+        </div>
+
+
+    </section>
+
+    <script src="view.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

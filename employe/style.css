@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900;9..40,1000&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'DM Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+:root {
+    --primary-color: rgb(33, 19, 100);
+    --white-color: #fff;
+    --main-content: rgb(244, 247, 254);
+    --text-color: #2B3674;
+}
+
+.conTainer {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    /* width: 290px; */
+}
+
+.main-side-section {
+    border-bottom: 1px solid #FFFFFF2B;
+}
+
+.nav-head {
+    padding: 26px;
+
+}
+
+.main-section-head {
+    color: var(--white-color);
+    font-size: 23px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: 28.75px
+}
+
+.main-side-head {
+    color: var(--white-color);
+    font-size: 23px;
+    font-family: Poppins;
+    font-weight: 300;
+    line-height: 28.75px;
+}
+
+.nav-bar-Powered {
+    border-bottom: 1px solid #FFFFFF2B;
+}
+
+
+.nav-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nav-head-content {
+    margin: 1px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    /* height: 200vh; */
+    /* gap: 20px; */
+    /* padding-top: 20px; */
+}
+
+.nav-head-content li {
+    /* padding-left: 25px; */
+    padding: 10px;
+}
+.nav-head-content li:hover {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.13);
+}
+.nav-head-content li a {
+    display: flex;
+    gap: 15px;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-family: DM Sans;
+    font-weight: 500;
+    /* line-height: 30px; */
+}
+
+.nav-head-content a {
+    display: flex;
+    align-items: center;
+}
+
+.copyright {
+    display: flex;
+    background-color: var(--primary-color);
+    gap: 10px;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+    padding: 22px;
+}
+
+.copyright-content {
+    color: var(--white-color);
+    font-size: 12px;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+/* main content */
+
+.main-content {
+    background-color: var(--main-content);
+    width: 100%;
+    padding: 20px;
+    /* height: 100vh; */
+}
+.banner-header{
+    display: flex;
+}
+.banner-text {
+    /* padding-left: 22px; */
+    flex: 1;
+}
+
+.head-text {
+    color: #707EAE;
+    font-size: 14px;
+    font-family: DM Sans;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.main-head {
+    color: var(--text-color);
+    font-size: 34px;
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.profile_search{
+    display: flex;
+    align-items: center;
+    gap: 20PX;
+    background-color: var(--white-color);
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 14px 17px 40px 4px rgba(112, 144, 176, 0.08);
+}
+input[type="search"]{
+    outline: none;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    background-color: transparent;
+
+}
+.search_input{
+    display: flex;
+    align-items: center;
+    background-color: var(--main-content);
+    
+    border-radius: 30px;
+}
+.search_input i{
+    color: #2B3674;
+    padding-left: 20px;
+}
+.bell{
+    color: #A3AED0;
+}
+
+.table-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center; */
+    border-radius: 20px;
+    margin: 20px 0px;
+    padding: 20px;
+    background-color: var(--white-color);
+}
+.table-container{
+    display: flex;
+}
+.tables{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.table-head {
+    color: var(--text-color);
+    font-size: 24px;
+    font-family: DM Sans;
+    font-weight: 700;
+    line-height: 32px;
+}
+.number-dropdown{
+    padding: 0px 8px 0px 20px;
+
+}
+.number-dropdown select{
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+.drop-text{
+    color: #333;
+    text-align: center;
+    font-family: DM Sans; 
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; 
+    letter-spacing: -0.3px;
+}
+.table-btn button{
+    border-radius: 16px;
+    background-color: #4318ff;
+    padding: 13px 20px ;
+    border: none;
+}
+.table-btn-text {
+    color: #FFF;
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 160% */
+    letter-spacing: -0.3px;
+
+}
+/* table */
+#table-content tr td{
+
+color: var(--text-color);
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 24px; 
+letter-spacing: -0.28px;
+
+}
+.table-down-icon::after{
+    content: '\f107';
+    font-family: FontAwesome;
+    margin: 0 0 0 7px;
+}
+.table-content-head .head-text{
+    color: #8B95B7;
+}
+
+/* .delete-edit button */
+
+.delete-edit {
+    border: none;
+    background: #EBEFF8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.delete-edit i {
+    color: #4318FF;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+ .employee-data button{
+    border: none;
+}
+.actions{
+    position: relative;
+}
+.employee-data{
+    position: absolute;
+    padding: 10px 5px;
+    left: -89px;
+    top: 45px;
+    border-radius: 14px;
+    border: 0.5px solid #D3D8E2;
+    background: #FFF;
+    box-shadow: 0px 1px 4px 0px rgba(16, 16, 49, 0.12);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+
+
+.employee-data .btn-controls{
+    background-color: transparent;
+    color: #2B3674;
+    align-items: center;
+    gap: 10px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.28px;
+    border: none;
+    display: flex;
+    padding: 10px;
+}
+.gap{
+    padding-bottom: 10px;
+}
