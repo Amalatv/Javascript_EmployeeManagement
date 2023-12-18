@@ -49,7 +49,7 @@
             </div>
         </div>
 
-
+         <div class="main-section-content">
         <!-- main content  -->
         <div class="main-content">
             <!-- main header text -->
@@ -63,7 +63,7 @@
                 <div class="profile_search">
                     <div class="search_input">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="search" placeholder="search">
+                        <input type="search" id="searchbar" onkeyup="searchdata()" placeholder="search">
                     </div>
                     <i class="fa-regular fa-bell bell"></i>
                     <img src="img/Avatar Style 6.png">
@@ -125,16 +125,26 @@
             </div>
         </div>
 
+         <!-- footer section -->
+         <footer class="footer-content">
+            <div class="footer-text">
+               <div class="copyright-text">&copy; 2023  All Rights Reserved. <strong>Stackup</strong></div>
+               <div class="copyright-text copyright-terms">
+                      <div class="terms">Terms of Use</div>
+                      <div class="privacy">Privacy Policy</div>
+               </div>
+            </div>
+         </footer>
+
+        </div>
+
         <!-- form content -->
         <div class="row" id="">
 
             <div class="col-lg-6 bg-colour block col-md-12 " id="Employee-form">
                 <div class="head-btn">
                     <h3 class="text " id="edit-head">Add Employee </h3>         
-                    <!-- <button onclick="Formclose()" class="close-button">&times;</button>  -->
-                    <button onclick="Formclose()" class="close">&times;</button> 
-                    <!-- <button  class="btn-close" aria-label="Close"></button> -->
-
+                    <i onclick="Formclose()" class=" close fa-solid fa-xmark"></i>
                 </div>
                 <div >
                 <label for="formFile" id="displayaddimg"
@@ -314,18 +324,18 @@
 
         <div id="overlay"></div>
     </section>
+
+
        <!-- delete alertbox -->
        <div id="deleteformbox" class="bg-colour delete-edit-btn col-lg-5 ">
            <div class="dele-head ">
               <div class="text">Delete Employee</div>
-              <button onclick="closealert()" class="close">&times;</button> 
-
-              <!-- <div onclick="closealert()"><i class="bi bi-x dele-icon"></i></div> -->
+              <i onclick="closealert()" class=" close fa-solid fa-xmark"></i>
             </div>
             <div class="dele-head-text">Are you sure you want to delete this employee?</div>
             <div class="dele-bt buttons d-flex justify-content-end">
-            <button onclick="closealert()" id="formcancel" class="btn  btn-light ">Cancel</button>
-            <button id="formdelete" class="btn dele-btns">Delete</button>
+                 <button onclick="closealert()" id="formcancel" class="btn  btn-light ">Cancel</button>
+                 <button id="formdelete" class="btn dele-btns">Delete</button>
            </div>
        </div>
        

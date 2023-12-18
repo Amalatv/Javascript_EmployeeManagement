@@ -1,14 +1,23 @@
 
 //fetch data
 
- function getData(){
-  fetch("http://localhost:3000/employees")
-    .then((data) => {
-      return data.json()
-    }).then((objectData) => {
+async function getuservalues(){
+   try{
+      const data = await fetch("http://localhost:3000/employees")
+      const objectData = await data.json()
+      
+      getData(objectData)
+      alluserdata = objectData
+   }catch(error){
+    console.log(error)
+   }
+}
+getuservalues()
+
+ function getData(user){
       let tableData = "";
       let slno = 1
-      objectData.forEach((user, index) => {
+      user.forEach((user, index) => {
         tableData += `
         
         <tr>
@@ -35,9 +44,9 @@
         slno++
       })
       document.getElementById("table-content").innerHTML = tableData;
-    })
+    
   }
-  getData()
+  // getData()
 
 // slnumber//
 
@@ -50,7 +59,45 @@ function slnumber(num) {
 }
 //slnumber end//
 
+//searching employee//
 
+// function searchdata(){
+//   const searchs = document.getElementById("searchbar").value.toUpperCase();
+//   let datafetch =[];
+//   for(let j=0;j<alluserdata.length;j++){
+//      let firstName = alluserdata.firstName.toUpperCase();
+//      let email = alluserdata.email.toUpperCase();
+//      let phone = alluserdata.phone.toString().toUpperCase();
+  
+//   if(firstName.includes(searchs)||email.includes(searchs)||phone.includes(searchs)){
+//     datafetch.push(alluserdata[j])
+//     console.log(datafetch)
+//   }
+// }
+//   getData(datafetch)
+
+// }
+
+
+function searchdata() {
+  const searchs = document.getElementById("searchbar").value.toUpperCase();
+  let datafetch = [];
+
+  for (let j = 0; j < alluserdata.length; j++) {
+    let firstName = alluserdata[j].firstName.toUpperCase();
+    let lastName = alluserdata[j].lastName.toUpperCase();
+    let email = alluserdata[j].email.toUpperCase();
+    let phone = alluserdata[j].phone.toString().toUpperCase();
+
+    if (firstName.includes(searchs) || lastName.includes(searchs) ||  email.includes(searchs) || phone.includes(searchs)) {
+      datafetch.push(alluserdata[j]);
+    }
+  }
+
+  getData(datafetch);
+}
+
+//searching employee end//
 
 //display form//
 
@@ -67,10 +114,6 @@ function Formopen (){
 
         employeeformopen.classList.add('active');
         document.getElementById('overlay').classList.add('active');
-
-
-        // document.getElementById('displyimgbox').style.display ="none";
-
 }
 
 document.getElementById('overlay').addEventListener("click",function(){
@@ -203,6 +246,7 @@ function closealert() {
   deleteform.classList.remove('active');
   document.getElementById('overlay').classList.remove('active');
 }
+//display none deletebox//
 document.getElementById('overlay').addEventListener("click",function(){
   closealert();
 })
