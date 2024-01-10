@@ -69,32 +69,32 @@
                 </div>
             </div>
 
-            
-            
+
+
 
 
             <div class="row edit-form" id="editEmployeeForm">
 
                 <div class="col-lg-6 bg-colour edit-block col-md-12 " id="block">
-                        <div class="emp-details">
+                    <div class="emp-details">
                         <img class="img-bg" src="img/Background Image.png">
-                       
+
                         <img class="bg-image" id="view-img" src="img/Elipse 5.png">
                         <div class="img-head">
-                        <div class="form-name" id="view-fullname">Mr.Michael Johnson</div>
-                        <div class="form-email" id="view-email">michaelj.@gmail.com</div>
+                            <div class="form-name" id="view-fullname">Mr.Michael Johnson</div>
+                            <div class="form-email" id="view-email">michaelj.@gmail.com</div>
                         </div>
                         <!-- <button data-close-button class="close-button">&times;</button> -->
-                       </div>
-                         <!-- row1 -->
-                         <div class="form-table mt-4">
-                         <div class="form-text">
-                             <div class=" form-email">Gender</div>
-                             <div class="form-name form-content" id="view-gender">Female</div>
+                    </div>
+                    <!-- row1 -->
+                    <div class="form-table mt-4">
+                        <div class="form-text">
+                            <div class=" form-email">Gender</div>
+                            <div class="form-name form-content" id="view-gender">Female</div>
 
-                         </div>
+                        </div>
 
-                         <div class="form-text">
+                        <div class="form-text">
                             <div class=" form-email">Age</div>
                             <div class="form-name form-content" id="view-age">37</div>
 
@@ -105,10 +105,10 @@
                             <div class="form-name form-content" id="view-dob">12 december 1980</div>
 
                         </div>
-                        </div>
-                      
-                          <!-- row2 -->
-                        <div class="form-table mt-3">
+                    </div>
+
+                    <!-- row2 -->
+                    <div class="form-table mt-3">
                         <div class="form-text form-box">
                             <div class=" form-email">Mobile Number</div>
                             <div class="form-name form-content" id="view-phone"></div>
@@ -121,56 +121,58 @@
 
                         </div>
 
-                        </div>
+                    </div>
 
-                         <!-- row3 -->
-                         <div class="form-table mt-3">
-                            <div class="form-text form-box">
-                                <div class=" form-email">Address</div>
-                                <div class="form-name form-content" id="view-address">North No-12 Garden villa
-                                    Cochin
-                                </div>
-    
-                            </div>
-    
-                            <div class="form-text form-box">
-                                <div class=" form-email">Username</div>
-                                <div class="form-name form-content" id="view-username">michaeljohn</div>
-    
-                            </div>
-    
+                    <!-- row3 -->
+                    <div class="form-table mt-3">
+                        <div class="form-text form-box">
+                            <div class=" form-email">Address</div>
+                            <div class="form-name form-content" id="view-address">North No-12 Garden villa
+                                Cochin
                             </div>
 
-                        <div class=" d-flex justify-content-end buttons edit-block bg-colour w-100">
-                            <button type="button" class="btn dele-btns align" onclick="deleteData(employeeid)">Delete</button>
-                            <button type="button" class="btn btn-primary" onclick="viewformopen(); viewedit()">Edit Details</button>
                         </div>
-                    
+
+                        <div class="form-text form-box">
+                            <div class=" form-email">Username</div>
+                            <div class="form-name form-content" id="view-username">michaeljohn</div>
+
+                        </div>
+
+                    </div>
+
+                    <div class=" d-flex justify-content-end buttons edit-block bg-colour w-100">
+                        <button type="button" class="btn dele-btns align"
+                            onclick="deleteData(employeeid)">Delete</button>
+                        <button type="button" class="btn btn-primary" onclick="viewformopen(); viewedit()">Edit
+                            Details</button>
+                    </div>
+
                 </div>
             </div>
-            
+
             <!-- EDIT FORM -->
 
             <div class="row" id="">
 
                 <div class="col-lg-6 bg-colour block col-md-12 " id="View-Employee-form">
                     <div class="head-btn">
-                        <h3 class="text " id="edit-head">Edit Employee </h3>         
-                    <i onclick="vieweditformclose()"class=" close fa-solid fa-xmark"></i>    
+                        <h3 class="text " id="edit-head">Edit Employee </h3>
+                        <i onclick="vieweditformclose()" class=" close fa-solid fa-xmark"></i>
                     </div>
-                    
+
                     <!---edit form image--->
                     <div class="editdp " id="displayimgbox">
-                    <div class="edit-picture">
-                        <img id="getimg" class="get-edit-pic" src="/">
-                    </div>
-                       <label for="change-photo" class="changeimgbtn">
-                        change
-                        <input id="change-photo" type="file">
-                       </label> 
+                        <div class="edit-picture">
+                            <img id="getimg" class="get-edit-pic" src="/">
+                        </div>
+                        <label for="change-photo" class="changeimgbtn">
+                            change
+                            <input id="change-photo" type="file">
+                        </label>
                     </div>
                     <!---edit form image end--->
-    
+
                     <form>
                         <div class="row">
                             <div class="col-lg-4 col-md-12">
@@ -183,79 +185,82 @@
                                     <option value="Mrs">Mrs.</option>
                                     <option value="Mrs">Dr.</option>
                                     <option value="Mrs">Prof.</option>
-    
+
                                 </select>
                             </div>
-    
+
                             <div class="col-lg-4 col-md-6">
                                 <label for="first-name" class="form-label pb-1 pt-2 required">First Name</label>
                                 <input class="form-control form-control-lg" type="text" placeholder="enter firstname"
                                     aria-label=".form-control-sm example" id="firstName">
-    
+
                             </div>
-    
+
                             <div class="col-lg-4 col-md-6">
                                 <label for="last-name" class="form-label pb-1 pt-2 required">Last Name</label>
                                 <input class="form-control form-control-lg" type="text" placeholder="enter lastname"
                                     aria-label=".form-control-sm example" id="lastName">
-    
+
                             </div>
-    
-    
+
+
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-sm'-12">
-                                <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">Email Address</label>
+                                <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">Email
+                                    Address</label>
                                 <input type="email" class="form-control form-control-lg" id="email"
                                     placeholder="enter email" aria-describedby="emailHelp">
                             </div>
-    
+
                             <div class="col-lg-6 col-sm-12">
                                 <label for="Mobile Number" class="form-label pb-1 pt-2 required">Mobile Number</label>
                                 <input class="form-control form-control-lg" type="text"
-                                    placeholder="enter your mobile number" aria-label=".form-control-sm example" id="phone">
+                                    placeholder="enter your mobile number" aria-label=".form-control-sm example"
+                                    id="phone">
                             </div>
-    
+
                         </div>
-    
+
                         <div class="row">
                             <div class="col-lg-6 col-sm-12">
                                 <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">User Name</label>
                                 <input type="text" class="form-control form-control-lg" placeholder="enter user name"
                                     aria-describedby="emailHelp" id="username">
                             </div>
-    
+
                             <div class="col-lg-6 col-sm-12">
                                 <label for="password" class="form-label pb-1 pt-2 required">Password</label>
-                                <input class="form-control form-control-lg" type="password" placeholder="enter your password"
-                                    aria-label=".form-control-sm example" id="password">
+                                <input class="form-control form-control-lg" type="password"
+                                    placeholder="enter your password" aria-label=".form-control-sm example"
+                                    id="password">
                             </div>
-    
+
                         </div>
-    
+
                         <div class="row align-items-center">
                             <div class="col-lg-6 col-sm-12">
                                 <label for="date of birth" class="form-label pb-1 pt-2 required">Date of Birth</label>
                                 <input class="form-control form-control-lg" type="date" placeholder="" id="dob"
                                     aria-label=".form-control-sm example">
-    
+
                             </div>
-    
+
                             <div class="col-lg-6 col-sm-12 align-items-start">
                                 <label for="gender" class="form-label pb-1 pt-2 required" id="gender">Gender</label>
                                 <div class="row mt-2">
                                     <div class="form-check col-4 ms-3">
-    
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="Male" value="male">
+
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Male"
+                                            value="male">
                                         <label class="form-check-label" for="flexRadioDefault1">
                                             Male
                                         </label>
                                     </div>
-    
+
                                     <div class="form-check col-6">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="Female" value="female">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Female"
+                                            value="female">
                                         <label class="form-check-label" for="flexRadioDefault2">
                                             Female
                                         </label>
@@ -263,7 +268,7 @@
                                 </div>
                             </div>
                         </div>
-    
+
                         <div class="row pt-2">
                             <div class="col-12">
                                 <label for="Address" class="form-label pb-1 required">Qualifications</label>
@@ -271,7 +276,7 @@
                                     aria-label=".form-control-sm example" id="qualifications">
                             </div>
                         </div>
-    
+
                         <div class="row pt-2">
                             <div class="col-12">
                                 <label for="Address" class="form-label pb-1 required">Address</label>
@@ -279,11 +284,12 @@
                                     aria-label=".form-control-sm example" id="address">
                             </div>
                         </div>
-    
+
                         <div class="row">
                             <div class="col-lg-6 col-sm-12">
                                 <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">Country</label>
-                                <select class="form-select form-select-lg" aria-label="Default select example" id="country">
+                                <select class="form-select form-select-lg" aria-label="Default select example"
+                                    id="country">
                                     <option selected>select country</option>
                                     <option value="India">India</option>
                                     <option value="US">US</option>
@@ -292,7 +298,8 @@
                             </div>
                             <div class="col-lg-6 col-sm-12">
                                 <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">State</label>
-                                <select class="form-select form-select-lg" aria-label="Default select example" id="state">
+                                <select class="form-select form-select-lg" aria-label="Default select example"
+                                    id="state">
                                     <option selected>select state</option>
                                     <option value="Kerala">Kerala</option>
                                     <option value="Karnataka">Karnataka</option>
@@ -300,56 +307,92 @@
                                 </select>
                             </div>
                         </div>
-    
+
                         <div class="row">
                             <div class="col-lg-6">
                                 <label for="city" class="form-label pb-1 pt-2 required">City</label>
-                                <input class="form-control form-control-lg" type="text" placeholder="enter city" id="city"
-                                    aria-label=".form-control-sm example">
+                                <input class="form-control form-control-lg" type="text" placeholder="enter city"
+                                    id="city" aria-label=".form-control-sm example">
                             </div>
-    
+
                             <div class="col-lg-6">
                                 <label for="pin/zip" class="form-label pb-1 pt-2 required">Pin/Zip</label>
-                                <input class="form-control form-control-lg" type="text" placeholder="enter pin/zip" id="pin"
-                                    aria-label=".form-control-sm example">
+                                <input class="form-control form-control-lg" type="text" placeholder="enter pin/zip"
+                                    id="pin" aria-label=".form-control-sm example">
                             </div>
                         </div>
-    
+
                         <div class=" d-flex justify-content-end buttons bg-colour w-100">
-                            <button type="button" onclick="vieweditformclose()" class="btn  btn-light align">Cancel</button>
-                           <a href="index.html"> <button type="button" class="btn btn-primary " id="addbtn" onclick="ViewEditEmployeeForm()">Save Change</button></a>
+                            <button type="button" onclick="vieweditformclose()"
+                                class="btn  btn-light align">Cancel</button>
+                            <a href="index.html"> <button type="button" class="btn btn-primary " id="addbtn"
+                                    onclick="ViewEditEmployeeForm();validationinput()">Save Change</button></a>
                             <!-- <button  class="btn btn-primary chbtn" id="change-btn" onclick="editEmployeeForm()"  >Save Change</button> -->
-    
+
                         </div>
                     </form>
                 </div>
             </div>
-            <!-- form end -->
-             <!-- EDIT FORM END -->
+
+            <!-- EDIT FORM END -->
             <div id="overlay"></div>
 
         </div>
 
-
     </section>
-    
-       <!-- delete alertbox -->
+
+    <!-- delete alertbox -->
     <div id="deleteformbox" class="bg-colour delete-edit-btn col-lg-5 ">
         <div class="dele-head ">
-           <div class="text">Delete Employee</div>
-           <i onclick="closealert()" class=" close fa-solid fa-xmark"></i>
-         </div>
-         <div class="dele-head-text">Are you sure you want to delete this employee?</div>
-         <div class="dele-bt buttons d-flex justify-content-end">
-         <button onclick="closealert()" id="formcancel" class="btn  btn-light ">Cancel</button>
-         <a href="index.html"> <button type="button" id="formdelete" class="btn dele-btns">Delete</button></a>
-         </div>
+            <div class="text">Delete Employee</div>
+            <i onclick="closealert()" class=" close fa-solid fa-xmark"></i>
+        </div>
+        <div class="dele-head-text">Are you sure you want to delete this employee?</div>
+        <div class="dele-bt buttons d-flex justify-content-end">
+            <button onclick="closealert()" id="formcancel" class="btn  btn-light ">Cancel</button>
+            <a href="index.html"> <button type="button" id="formdelete" class="btn dele-btns">Delete</button></a>
+        </div>
     </div>
 
+    <div class="toast" id="toast-show">
+        <div class="toast-content">
+            <i class="fas fa-solid fa-check check"></i>
+            <div class="message">
+                <span class="text">Success!</span>
+                <span class="text-main">Employee Deleted Successfully</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- success employee created notificatiion -->
+    <div class="toast" id="toast-create">
+        <div class="toast-employee">
+            <div class="toast-content">
+                <i class="fas fa-solid fa-check check"></i>
+
+                <div class="message">
+                    <span class="text">Success!</span>
+                    <span class="text-main">Employee Created Successfully</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- success employee updated notificatiion -->
+    <div class="toast" id="toast-update">
+        <div class="toast-edit">
+            <div class="toast-content">
+                <i class="fas fa-solid fa-check check"></i>
+
+                <div class="message">
+                    <span class="text">Success!</span>
+                    <span class="text-main">Employee Edited Successfully</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="view.js"></script>
-    
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

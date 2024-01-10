@@ -43,7 +43,7 @@ li {
 .main-section-content{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .nav-head {
     padding: 26px;
@@ -198,13 +198,14 @@ input[type="search"]{
 .table-section {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    /* flex: 1; */
     gap: 20px;
     /* align-items: center; */
     border-radius: 20px;
     margin: 20px 0px;
     padding: 20px;
     background-color: var(--white-color);
+    /* height: 100vh; */
 }
 .table-container{
     display: flex;
@@ -228,6 +229,7 @@ input[type="search"]{
 .number-dropdown select{
     padding: 6px 12px;
     border-radius: 5px;
+    outline: none;
 }
 .drop-text{
     color: #333;
@@ -254,9 +256,10 @@ input[type="search"]{
     font-weight: 700;
     line-height: 24px; /* 160% */
     letter-spacing: -0.3px;
-
 }
+
 /* table */
+
 #table-content tr td{
 
 color: var(--text-color);
@@ -291,6 +294,7 @@ letter-spacing: -0.28px;
     display: flex;
     align-items: center;
 }
+
  .employee-data button{
     border: none;
 }
@@ -354,4 +358,86 @@ letter-spacing: -0.28px;
 
     display: flex;
     gap: 10px;
+}
+/* pagination */
+.pagination{
+    display: flex;
+    gap: 4px;
+    justify-content: flex-end;
+}
+.pagination li{
+    border-radius: 8px;
+    border: 1px solid #F1F1F1;
+    background: #FFF;
+    color: #333333;
+    padding:6px 12px;
+}
+.pagination li:hover{
+  background-color: #4318FF;
+  color: #fff;
+}
+.pagination i{
+    color: #333333;
+}
+.pagination li:hover i{
+    color: #FFF;
+}
+
+/* success message */
+.toast{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    border-radius: 20px;
+    padding: 30px 16px;
+    background-color: #fff;
+    z-index: 5;
+}
+.toast-employee{
+    /* position: absolute; */
+    top: 80%;
+    /* left: 40%;
+    border-radius: 20px;
+    padding: 30px 16px;
+    background-color: #fff;
+    z-index: 5; */
+}
+.toast-edit{
+    /* position: absolute; */
+    top: 80%;
+    /* left: 40%;
+    border-radius: 20px;
+    padding: 30px 16px;
+    background-color: #fff;
+    z-index: 5; */
+}
+.toast .toast-content{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.toast-content .message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+}
+.toast-content .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    background-color: #4318FF;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+}
+.message .text{
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.message .text-main{
+    font-size: 16px;
+    font-weight: 600;
 }
