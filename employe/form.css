@@ -99,6 +99,23 @@ body {
 .bg-colour{
     background-color: var(--background-color);
 }
+/* btn remove */
+#btnbox{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0,0,0,.5); */
+    pointer-events: none; 
+    transition: 200ms ease-in-out;
+    z-index: 2;
+}
+#btnbox.active{
+    opacity: 1;
+    pointer-events: all; 
+}
 
 .text{
     font-weight: 700;
@@ -129,7 +146,8 @@ body {
 }
 .form-control-lg{
     font-size: 1rem;
-    color: #949DB9;
+    /* color: #949DB9; */
+    color: #6174af;
 }
 input::placeholder {
     color:#949DB9;
@@ -174,7 +192,8 @@ input[type="file"]{
 }
 
 .form-control{
-    color: #949DB9 !important;
+    color: #656b7e;
+    /* color: #949DB9 !important; */
     border-radius: 16px;
 }
 .form-control::placeholder{
@@ -409,20 +428,7 @@ letter-spacing: -0.28px;
     display: flex;
     justify-content: flex-end;
 }
-/* #toastbox{
-    position: absolute;
-    top: 90px;
-    left: 30%;
-    display: flex;
-}
-.toast{
-    width: 400px;
-    height: 80px;
-    font-size: 20px;
-    color: #333;
-    display: flex;
-    align-items: center;
-} */
+
 /* delete alertbox-end */
 /*edit image*/
 .edit-picture{

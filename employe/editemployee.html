@@ -69,10 +69,6 @@
                 </div>
             </div>
 
-
-
-
-
             <div class="row edit-form" id="editEmployeeForm">
 
                 <div class="col-lg-6 bg-colour edit-block col-md-12 " id="block">
@@ -84,7 +80,6 @@
                             <div class="form-name" id="view-fullname">Mr.Michael Johnson</div>
                             <div class="form-email" id="view-email">michaelj.@gmail.com</div>
                         </div>
-                        <!-- <button data-close-button class="close-button">&times;</button> -->
                     </div>
                     <!-- row1 -->
                     <div class="form-table mt-4">
@@ -144,8 +139,7 @@
                     <div class=" d-flex justify-content-end buttons edit-block bg-colour w-100">
                         <button type="button" class="btn dele-btns align"
                             onclick="deleteData(employeeid)">Delete</button>
-                        <button type="button" class="btn btn-primary" onclick="viewformopen(); viewedit()">Edit
-                            Details</button>
+                        <button type="button" class="btn btn-primary" onclick="viewformopen(); viewedit()">Edit Details</button>
                     </div>
 
                 </div>
@@ -326,8 +320,7 @@
                             <button type="button" onclick="vieweditformclose()"
                                 class="btn  btn-light align">Cancel</button>
                             <a href="index.html"> <button type="button" class="btn btn-primary " id="addbtn"
-                                    onclick="ViewEditEmployeeForm();validationinput()">Save Change</button></a>
-                            <!-- <button  class="btn btn-primary chbtn" id="change-btn" onclick="editEmployeeForm()"  >Save Change</button> -->
+                                >Save Change</button></a>
 
                         </div>
                     </form>
@@ -354,6 +347,7 @@
         </div>
     </div>
 
+    <!-- success employee Deleted -->
     <div class="toast" id="toast-show">
         <div class="toast-content">
             <i class="fas fa-solid fa-check check"></i>

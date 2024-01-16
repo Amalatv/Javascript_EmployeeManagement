@@ -198,7 +198,7 @@ input[type="search"]{
 .table-section {
     display: flex;
     flex-direction: column;
-    /* flex: 1; */
+    flex: 1;
     gap: 20px;
     /* align-items: center; */
     border-radius: 20px;
@@ -259,7 +259,9 @@ input[type="search"]{
 }
 
 /* table */
-
+.row-section{
+    height: 100vh;
+}
 #table-content tr td{
 
 color: var(--text-color);
@@ -372,15 +374,19 @@ letter-spacing: -0.28px;
     color: #333333;
     padding:6px 12px;
 }
-.pagination li:hover{
+/* .pagination li:hover{
   background-color: #4318FF;
   color: #fff;
-}
+} */
 .pagination i{
     color: #333333;
 }
-.pagination li:hover i{
+/* .pagination li:hover i{
     color: #FFF;
+} */
+.pagination li.active {
+    background-color:  #4318FF;
+    color: white;
 }
 
 /* success message */
@@ -394,22 +400,11 @@ letter-spacing: -0.28px;
     z-index: 5;
 }
 .toast-employee{
-    /* position: absolute; */
     top: 80%;
-    /* left: 40%;
-    border-radius: 20px;
-    padding: 30px 16px;
-    background-color: #fff;
-    z-index: 5; */
+  
 }
 .toast-edit{
-    /* position: absolute; */
     top: 80%;
-    /* left: 40%;
-    border-radius: 20px;
-    padding: 30px 16px;
-    background-color: #fff;
-    z-index: 5; */
 }
 .toast .toast-content{
     display: flex;
