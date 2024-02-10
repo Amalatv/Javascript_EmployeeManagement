@@ -275,6 +275,7 @@ input[type="file"]{
 .required::after{
    content: "*";
    color: var(--danger-color);
+   display: none;
 }
 /* validation */
 .errormessage {
@@ -282,7 +283,7 @@ input[type="file"]{
     color: red;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    margin-top: 5px;
     display: none;
 }
 .form-margin{
@@ -413,7 +414,7 @@ letter-spacing: -0.28px;
 }
 .dele-head{
     display: flex;
-    
+    justify-content: flex-end;
 }
 .dele-head .close-button{
     padding: 5px 10px;
@@ -430,6 +431,41 @@ letter-spacing: -0.28px;
 }
 
 /* delete alertbox-end */
+/* delete sucssus message */
+.delete-success{
+    border-radius: 12px;
+    padding: 15px;
+    position: absolute;
+    top: 10%;
+    left: 36%;
+    transition: all ease 400ms;
+    display: none;
+    z-index: 8;
+
+}
+.dele-head .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 26px;
+    width: 26px;
+    background-color: #4318FF;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 50%;
+}
+.dele-head .close-mark{
+    padding: 2px;
+    font-size: 20px;
+
+}
+.success-message{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 6px;
+    margin-bottom: 25px;
+}
 /*edit image*/
 .edit-picture{
     width: 150px;

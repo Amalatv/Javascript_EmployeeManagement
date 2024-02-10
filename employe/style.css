@@ -282,7 +282,9 @@ letter-spacing: -0.28px;
 }
 
 /* .delete-edit button */
-
+.rounded-circle{
+    object-fit: cover;
+}
 .delete-edit {
     border: none;
     background: #EBEFF8;
@@ -373,66 +375,68 @@ letter-spacing: -0.28px;
     background: #FFF;
     color: #333333;
     padding:6px 12px;
+    cursor: pointer;
 }
-/* .pagination li:hover{
-  background-color: #4318FF;
-  color: #fff;
-} */
+
 .pagination i{
     color: #333333;
 }
-/* .pagination li:hover i{
-    color: #FFF;
-} */
+
 .pagination li.active {
     background-color:  #4318FF;
     color: white;
 }
 
 /* success message */
-.toast{
+.tt{
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 10%;
+    left: 36%;
     border-radius: 20px;
     padding: 30px 16px;
     background-color: #fff;
     z-index: 5;
 }
-.toast-employee{
+.tt-employee{
     top: 80%;
   
 }
-.toast-edit{
+.tt-edit{
     top: 80%;
 }
-.toast .toast-content{
+.toast-content{
     display: flex;
     align-items: center;
     gap: 5px;
+    color:rgb(36 5 181);
+
 }
 .toast-content .message{
     display: flex;
     flex-direction: column;
     margin: 0 15px;
+    /* color: var(--primary-color); */
+
 }
-.toast-content .check{
+.toast-content i{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 30px;
     width: 30px;
-    background-color: #4318FF;
-    color: #fff;
-    font-size: 20px;
+    color: var(--secondary-color);
+    font-size: 25px;
     border-radius: 50%;
 }
 .message .text{
     font-size: 20px;
     font-weight: 600;
-    color: #333;
+    /* color: #4318FF; */
 }
 .message .text-main{
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
+    /* color: var(--primary-color); */
+    padding-top: 10px;
+
 }

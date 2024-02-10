@@ -13,6 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/Avatar Style 6.png">
 
 </head>
 
@@ -90,7 +91,7 @@
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
-                                    <option value="5"selected>5</option>
+                                    <option value="5" selected>5</option>
                                     <option value="6">6</option>
                                     <option value="7">7</option>
                                     <option value="8">8</option>
@@ -130,7 +131,7 @@
                 <div class="paginationitems">
                     <ul class="pagination">
                         <!-- <li class="prev"><a href="#" id="prev"><i class="fa fa-angle-left"></i></a></li> -->
-                    
+
                         <!-- <li class="next"><a href="#" id="next"><i class="fa fa-angle-right"></i></a></li> -->
                     </ul>
                 </div>
@@ -147,225 +148,235 @@
                 </div>
             </footer>
 
-        <!-- </div> -->
+            <!-- </div> -->
 
-        <!-- form content -->
-        <div class="row" id="forms">
+            <!-- form content -->
+            <div class="row" id="forms">
 
-            <div class="col-lg-6 bg-colour block col-md-12 " id="Employee-form">
-                <div class="head-btn">
-                    <h3 class="text " id="edit-head">Add Employee </h3>
-                    <i onclick="Formclose()" class=" close fa-solid fa-xmark"></i>
-                </div>
-                <div>
-                    <label for="formFile" id="displayaddimg"
-                        class="file-upload w-100  flex-column align-items-center justify-content-center">
-                        <i class="bi bi-upload upload d-flex justify-content-center"></i>
-                        <h5 class="text">Upload Image</h5>
-                        <p>PNG, JPG files are allowed</p>
-                        <input class="form-control" type="file" id="formFile">
-                    </label>
-                </div>
-                <!---edit form image--->
-                <div class="editdp " id="displayimgbox">
-                    <div class="edit-picture">
-                        <img id="getimg" class="get-edit-pic" src="/">
+                <div class="col-lg-6 bg-colour block col-md-12 " id="Employee-form">
+                    <div class="head-btn">
+                        <h3 class="text " id="edit-head">Add Employee </h3>
+                        <i onclick="Formclose()" class=" close fa-solid fa-xmark"></i>
                     </div>
-                    <label for="change-photo" class="changeimgbtn">
-                        change
-                        <input id="change-photo" type="file">
-                    </label>
-                </div>
-                <!---edit form image end--->
-
-                <form>
-                    <div class="row">
-                        <div class="col-lg-4 col-md-12">
-                            <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required "
-                                id="form-salutation">Salutation</label>
-                            <select class="form-select form-select-lg" aria-label="Default select example"
-                                id="salutation">
-                                <option selected>select </option>
-                                <option value="Mr">Mr.</option>
-                                <option value="Ms">Ms.</option>
-                                <option value="Mrs">Mrs.</option>
-                                <option value="Mrs">Dr.</option>
-                                <option value="Mrs">Prof.</option>
-                            </select>
-                            <label for="errormessage" class="errormessage" id="errormessageSalutation">Select
-                                one</label>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <label for="first-name" class="form-label pb-1 pt-2 required">First Name</label>
-                            <input class="form-control form-control-lg" type="text" placeholder="enter firstname"
-                                aria-label=".form-control-sm example" id="firstName">
-                            <label for="errormessage" class="errormessage" id="errormessageFirstname">Please Enter the
-                                First Name</label>
-                        </div>
-
-                        <div class="col-lg-4 col-md-6">
-                            <label for="last-name" class="form-label pb-1 pt-2 required">Last Name</label>
-                            <input class="form-control form-control-lg" type="text" placeholder="enter lastname"
-                                aria-label=".form-control-sm example" id="lastName">
-                            <label for="errormessage" class="errormessage" id="errormessageLastname">Please Enter
-                                the Last Name</label>
-                        </div>
-
-
+                    <div>
+                        <label for="formFile" id="displayaddimg"
+                            class="file-upload w-100  flex-column align-items-center justify-content-center">
+                            <i class="bi bi-upload upload d-flex justify-content-center"></i>
+                            <h5 class="text">Upload Image</h5>
+                            <p>PNG, JPG files are allowed</p>
+                            <input class="form-control" type="file" id="formFile">
+                        </label>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-sm'-12">
-                            <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">Email Address</label>
-                            <input type="email" class="form-control form-control-lg" id="email"
-                                placeholder="enter email" aria-describedby="emailHelp">
-                            <label for="errormessage" class="errormessage" id="errormessageEmail">Please Enter the
-                                Email</label>
+                    <!---edit form image--->
+                    <div class="editdp " id="displayimgbox">
+                        <div class="edit-picture">
+                            <img id="getimg" class="get-edit-pic" src="/">
                         </div>
-
-                        <div class="col-lg-6 col-sm-12">
-                            <label for="Mobile Number" class="form-label pb-1 pt-2 required">Mobile Number</label>
-                            <input class="form-control form-control-lg" type="text"
-                                placeholder="enter your mobile number" aria-label=".form-control-sm example" id="phone">
-                            <label for="errormessage" class="errormessage" id="errormessagePhone">Please Enter the
-                                Mobile Number</label>
-                        </div>
-
+                        <label for="change-photo" class="changeimgbtn">
+                            change
+                            <input id="change-photo" type="file">
+                        </label>
                     </div>
+                    <!---edit form image end--->
 
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                            <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">User Name</label>
-                            <input type="text" class="form-control form-control-lg" placeholder="enter user name"
-                                aria-describedby="emailHelp" id="username">
-                            <label for="errormessage" class="errormessage " id="errormessageUsrname">Please Enter
-                                username</label>
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-4 col-md-12">
+                                <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required "
+                                    id="form-salutation">Salutation</label>
+                                <select class="form-select form-select-lg" aria-label="Default select example"
+                                    id="salutation">
+                                    <option selected>select </option>
+                                    <option value="Mr">Mr.</option>
+                                    <option value="Ms">Ms.</option>
+                                    <option value="Mrs">Mrs.</option>
+                                    <option value="Mrs">Dr.</option>
+                                    <option value="Mrs">Prof.</option>
+                                </select>
+                                <label for="errormessage" class="errormessage" id="errormessageSalutation">Select
+                                    one</label>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="first-name" class="form-label pb-1 pt-2 required">First Name</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="enter firstname"
+                                    aria-label=".form-control-sm example" id="firstName">
+                                <label for="errormessage" class="errormessage" id="errormessageFirstname">Please Enter
+                                    the First Name</label>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <label for="last-name" class="form-label pb-1 pt-2 required">Last Name</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="enter lastname"
+                                    aria-label=".form-control-sm example" id="lastName">
+                                <label for="errormessage" class="errormessage" id="errormessageLastname">Please Enter
+                                    the Last Name</label>
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm'-12">
+                                <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">Email
+                                    Address</label>
+                                <input type="email" class="form-control form-control-lg" id="email"
+                                    placeholder="enter email" aria-describedby="emailHelp">
+                                <label for="errormessage" class="errormessage" id="errormessageEmail">Please Enter the
+                                    Email</label>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12">
+                                <label for="Mobile Number" class="form-label pb-1 pt-2 required">Mobile Number</label>
+                                <input class="form-control form-control-lg" type="text"
+                                    placeholder="enter your mobile number" aria-label=".form-control-sm example"
+                                    id="phone">
+                                <label for="errormessage" class="errormessage" id="errormessagePhone">Please Enter the
+                                    Mobile Number</label>
+                            </div>
+
                         </div>
 
-                        <div class="col-lg-6 col-sm-12">
-                            <label for="password" class="form-label pb-1 pt-2 required">Password</label>
-                            <input class="form-control form-control-lg" type="password"
-                                placeholder="enter your password" aria-label=".form-control-sm example" id="password">
-                            <label for="errormessage" class="errormessage " id="errormessagePass">Please Enter
-                                password</label>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">User Name</label>
+                                <input type="text" class="form-control form-control-lg" placeholder="enter user name"
+                                    aria-describedby="emailHelp" id="username">
+                                <label for="errormessage" class="errormessage " id="errormessageUsername">Please Enter
+                                    username</label>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12">
+                                <label for="password" class="form-label pb-1 pt-2 required">Password</label>
+                                <input class="form-control form-control-lg" type="password"
+                                    placeholder="enter your password" aria-label=".form-control-sm example"
+                                    id="password">
+                                <label for="errormessage" class="errormessage " id="errormessagePassword">Please Enter
+                                    password</label>
+                            </div>
+
                         </div>
 
-                    </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-sm-12">
+                                <label for="date of birth" class="form-label pb-1 pt-2 required">Date of Birth</label>
+                                <input class="form-control form-control-lg" type="date" placeholder="" id="dob"
+                                    aria-label=".form-control-sm example">
+                                <label for="errormessage" class="errormessage" id="errormessageDob">Please Select date
+                                    of birth</label>
+                            </div>
 
-                    <div class="row align-items-center">
-                        <div class="col-lg-6 col-sm-12">
-                            <label for="date of birth" class="form-label pb-1 pt-2 required">Date of Birth</label>
-                            <input class="form-control form-control-lg" type="date" placeholder="" id="dob"
-                                aria-label=".form-control-sm example">
-                            <label for="errormessage" class="errormessage" id="errormessageDob">Please Select date
-                                of birth</label>
-                        </div>
+                            <div class="col-lg-6 col-sm-12 align-items-start">
+                                <label for="gender" class="form-label pb-1 pt-2 required" id="gender">Gender</label>
+                                <div class="row mt-2">
+                                    <div class="form-check col-4 ms-3">
 
-                        <div class="col-lg-6 col-sm-12 align-items-start">
-                            <label for="gender" class="form-label pb-1 pt-2 required" id="gender">Gender</label>
-                            <div class="row mt-2">
-                                <div class="form-check col-4 ms-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Male"
+                                            value="male">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Male
+                                        </label>
+                                       
+                                    </div>
 
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="Male"
-                                        value="male">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Male
-                                    </label>
+                                    <div class="form-check col-6">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="Female"
+                                            value="female">
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Female
+                                        </label>
+                                        
+                                    </div>
+                                  
+                                   
                                 </div>
+                                <label for="errormessage" class="errormessage"
+                                id="errormessageGender">Please select the gender</label>
+                            </div>
+                            
+                        </div>
 
-                                <div class="form-check col-6">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="Female"
-                                        value="female">
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Female
-                                    </label>
-                                    <label for="errormessage" class="errormessage mt-4" id="errormessageGender">Please
-                                        select the gender</label>
-                                </div>
+                        <div class="row pt-2">
+                            <div class="col-12">
+                                <label for="Address" class="form-label pb-1 required">Qualifications</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="enter your address"
+                                    aria-label=".form-control-sm example" id="qualifications">
+                                <label for="errormessage" class="errormessage " id="errormessageQualifications">Please
+                                    Enter the Qualifications</label>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row pt-2">
-                        <div class="col-12">
-                            <label for="Address" class="form-label pb-1 required">Qualifications</label>
-                            <input class="form-control form-control-lg" type="text" placeholder="enter your address"
-                                aria-label=".form-control-sm example" id="qualifications">
-                            <label for="errormessage" class="errormessage " id="errormessageQualifications">Please
-                                Enter the Qualifications</label>
-                        </div>
-                    </div>
-
-                    <div class="row pt-2">
-                        <div class="col-12">
-                            <label for="Address" class="form-label pb-1 required">Address</label>
-                            <input class="form-control form-control-lg" type="text" placeholder="enter your address"
-                                aria-label=".form-control-sm example" id="address">
-                            <label for="errormessage" class="errormessage " id="errormessageAddress">Please Enter
-                                the Address</label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6 col-sm-12">
-                            <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">Country</label>
-                            <select class="form-select form-select-lg" aria-label="Default select example" id="country">
-                                <option selected>select country</option>
-                                <option value="India">India</option>
-                                <option value="US">US</option>
-                                <option value="Canada">Canada</option>
-                            </select>
-                            <label for="errormessage" class="errormessage " id="errormessageCountry">Please Select a
-                                country</label>
-                        </div>
-                        <div class="col-lg-6 col-sm-12">
-                            <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">State</label>
-                            <select class="form-select form-select-lg" aria-label="Default select example" id="state">
-                                <option selected>select state</option>
-                                <option value="Kerala">Kerala</option>
-                                <option value="Karnataka">Karnataka</option>
-                                <option value="Delhi">Delhi</option>
-                            </select>
-                            <label for="errormessage" class="errormessage " id="errormessageState">Please Select a
-                                state</label>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <label for="city" class="form-label pb-1 pt-2 required">City</label>
-                            <input class="form-control form-control-lg" type="text" placeholder="enter city" id="city"
-                                aria-label=".form-control-sm example">
-                            <label for="errormessage" class="errormessage " id="errormessageCity">Please Select a
-                                city</label>
+                        <div class="row pt-2">
+                            <div class="col-12">
+                                <label for="Address" class="form-label pb-1 required">Address</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="enter your address"
+                                    aria-label=".form-control-sm example" id="address">
+                                <label for="errormessage" class="errormessage " id="errormessageAddress">Please Enter
+                                    the Address</label>
+                            </div>
                         </div>
 
-                        <div class="col-lg-6">
-                            <label for="pin/zip" class="form-label pb-1 pt-2 required">Pin/Zip</label>
-                            <input class="form-control form-control-lg" type="text" placeholder="enter pin/zip" id="pin"
-                                aria-label=".form-control-sm example">
-                            <label for="errormessage" class="errormessage " id="errormessagePin">Please Enter the
-                                pincode</label>
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">Country</label>
+                                <select class="form-select form-select-lg" aria-label="Default select example"
+                                    id="country">
+                                    <option selected>select country</option>
+                                    <option value="India">India</option>
+                                    <option value="US">US</option>
+                                    <option value="Canada">Canada</option>
+                                </select>
+                                <label for="errormessage" class="errormessage " id="errormessageCountry">Please Select a
+                                    country</label>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <label for="exampleInputEmail1" class="form-label pb-1 pt-2 required">State</label>
+                                <select class="form-select form-select-lg" aria-label="Default select example"
+                                    id="state">
+                                    <option selected>select state</option>
+                                    <option value="Kerala">Kerala</option>
+                                    <option value="Karnataka">Karnataka</option>
+                                    <option value="Delhi">Delhi</option>
+                                </select>
+                                <label for="errormessage" class="errormessage " id="errormessageState">Please Select a
+                                    state</label>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <label for="city" class="form-label pb-1 pt-2 required">City</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="enter city"
+                                    id="city" aria-label=".form-control-sm example">
+                                <label for="errormessage" class="errormessage " id="errormessageCity">Please Select a
+                                    city</label>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <label for="pin/zip" class="form-label pb-1 pt-2 required">Pin/Zip</label>
+                                <input class="form-control form-control-lg" type="text" placeholder="enter pin/zip"
+                                    id="pin" aria-label=".form-control-sm example">
+                                <label for="errormessage" class="errormessage " id="errormessagePin">Please Enter the
+                                    pincode</label>
+
+                            </div>
+                        </div>
+
+                        <div class=" d-flex justify-content-end buttons bg-colour w-100">
+                            <button onclick="Formclose()" class="btn  btn-light align">Cancel</button>
+                            <button class="btn btn-primary " id="addbtn">Add Employee</button>
+                            <button class="btn btn-primary chbtn" id="change-btn" >Save
+                                Change</button>
 
                         </div>
-                    </div>
-
-                    <div class=" d-flex justify-content-end buttons bg-colour w-100">
-                        <button onclick="Formclose()" class="btn  btn-light align">Cancel</button>
-                        <button class="btn btn-primary " id="addbtn">Add Employee</button>
-                        <button class="btn btn-primary chbtn" id="change-btn" onclick="editEmployeeForm()">Save
-                            Change</button>
-
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
 
-        
-        <!-- form end -->
 
-        <div id="overlay"></div>
-        <div id="btnbox"></div>
+            <!-- form end -->
+
+            <div id="overlay"></div>
+            <div id="btnbox"></div>
     </section>
 
 
@@ -384,46 +395,107 @@
 
     <!-- success delete notificatiion -->
 
-    <div class="toast" id="toast-show">
-        <div class="toast-content">
-            <i class="fas fa-solid fa-check check"></i>
+    <!-- <div id="deleteformsuccess" class="bg-colour delete-success col-lg-5 ">
+        <div class="dele-head ">
 
+            <div class="success-message">
+                <i class="fas fa-solid fa-check check"></i>
+                <span class="text">Delete Success!</span>
+            </div>
+            <div><i onclick="closealert()" class=" close fa-solid fa-xmark close-mark"></i></div>
+
+        </div>
+        <div class="toast-content">
             <div class="message">
-                <span class="text">Success!</span>
                 <span class="text-main">Employee Deleted Successfully</span>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <!-- success employee created notificatiion -->
-    <div class="toast" id="toast-create">
-        <div class="toast-employee">
-            <div class="toast-content">
+
+    <!-- success add new employee notificatiion -->
+
+    <!-- <div id="addformsuccess" class="bg-colour delete-success col-lg-5 ">
+        <div class="dele-head ">
+
+            <div class="success-message">
                 <i class="fas fa-solid fa-check check"></i>
-
-                <div class="message">
-                    <span class="text">Success!</span>
-                    <span class="text-main">Employee Created Successfully</span>
-                </div>
+                <span class="text">New Employee Success!</span>
             </div>
+            <div><i onclick="closealert()" class=" close fa-solid fa-xmark close-mark"></i></div>
+
+        </div>
+        <div class="toast-content">
+            <div class="message">
+                <span class="text-main">New Employee Created Successfully</span>
+            </div>
+        </div>
+    </div> -->
+
+     <!-- success edit employee notificatiion -->
+
+     <!-- <div id="editformsuccess" class="bg-colour delete-success col-lg-5 ">
+        <div class="dele-head ">
+
+            <div class="success-message">
+                <i class="fas fa-solid fa-check check"></i>
+                <span class="text">Edit Employee Success!</span>
+            </div>
+            <div><i onclick="closealert()" class=" close fa-solid fa-xmark close-mark"></i></div>
+
+        </div>
+        <div class="toast-content">
+            <div class="message">
+                <span class="text-main">Employee Edited Successfully</span>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="delete-success bg-colour" id="deleteformsuccess">
+        <div class="toast-content">
+            <div>
+                <i class="fa-regular fa-trash-can"></i>
+            </div>
+            <div class="message">
+                <span class="text">Success!</span>
+                <div class="text-main">Employee Deleted Successfully</div>
+            </div>
+            <div><i onclick="closealert()" class=" close fa-solid fa-xmark close-mark"></i></div>
+        
         </div>
     </div>
 
-    <!-- success employee updated notificatiion -->
-    <div class="toast" id="toast-update">
-        <div class="toast-edit">
-            <div class="toast-content">
-                <i class="fas fa-solid fa-check check"></i>
-
-                <div class="message">
-                    <span class="text">Success!</span>
-                    <span class="text-main">Employee Edited Successfully</span>
-                </div>
+    <div class="delete-success bg-colour" id="editformsuccess">
+        <div class="toast-content">
+            <div>
+                <i class="fa-solid fa-user-pen"></i>
             </div>
+            <div class="message">
+                <span class="text">Success!</span>
+                <div class="text-main">Employee Edited Successfully</div>
+            </div>
+            <div><i onclick="closealert()" class=" close fa-solid fa-xmark close-mark"></i></div>
+        
         </div>
     </div>
+
+    <div class="delete-success bg-colour" id="addformsuccess">
+        <div class="toast-content">
+            <div>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="message">
+                <span class="text">Success!</span>
+                <div class="text-main">Employee Created Successfully</div>
+            </div>
+            <div><i onclick="closealert()" class=" close fa-solid fa-xmark close-mark"></i></div>
+        
+        </div>
+    </div>
+
+  
     <script src="script.js"></script>
-    
+
 </body>
 
 </html>
