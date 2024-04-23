@@ -22,7 +22,7 @@ function getData(user) {
     tableData += `
         
       <tr>
-        <td>#${slnumber(index + 1)}${(index + 1)}</td>
+        <td>#${slnumber(index)}${(index + 1)}</td>
         <td><img src="http://localhost:3000/employees/${user.id}/avatar" alt=profilpic class="rounded-circle mr-2" height=30 width=30> ${user.salutation} ${user.firstName} ${user.lastName}</td>
         <td>${user.email}</td>
         <td>${user.phone}</td>
@@ -105,7 +105,7 @@ function Formclose() {
   document.getElementById('overlay').classList.remove('active');
   // getuservalues();
 
-  window.location = "http://127.0.0.1:5501/employe/index.html"
+  // window.location = "http://127.0.0.1:5501/employe/index.html"
 }
 
 // DISPLAY FORM END //
