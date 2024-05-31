@@ -789,10 +789,10 @@ function Formclose() {
         document.getElementById("lastNameInput").textContent = "Please enter the Last Name";
       }
   
-      if (!validNamePattern.test(lastNameInput.value.trim())) {
-        document.getElementById("errormessageLastname").style.display = "flex";
-        document.getElementById("errormessageLastname").textContent = "Invalid characters in Last Name";
-      }
+      // if (!validNamePattern.test(lastNameInput.value.trim())) {
+      //   document.getElementById("errormessageLastname").style.display = "flex";
+      //   document.getElementById("errormessageLastname").textContent = "Invalid characters in Last Name";
+      // }
     });
 
 
